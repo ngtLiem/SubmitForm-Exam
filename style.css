@@ -1,0 +1,262 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.4fr 0.5fr 0.3fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.grid {
+    padding: 25px;
+    font-size: 3rem;
+}
+
+.header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    border-bottom: 2px solid red;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    background: url(image/header2.jpg);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.logo i {
+    font-size: 2rem;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.logo h3 {
+    font-size: 2rem;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-bar ul li {
+    margin-right: 20px;
+    border: none;
+    padding: 8px 25px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    background-color: blue;
+}
+
+.nav-bar li:hover {
+    background-color: yellowgreen;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black
+}
+
+section {
+    border: 2px solid red;
+    background: url(image/background.jpg);
+}
+
+.left {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    min-height: 100px;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.left img {
+    width: 100%;
+    font-weight: 100;
+    margin-top: 5px;
+    padding: auto;
+}
+
+.right {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.form-container {
+    width: 100%;
+    min-width: 300px;
+    justify-content: space-between;
+}
+
+.title-3rd {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.form {
+    font-size: 17px;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-row {
+    width: 95%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin: 5px auto;
+    padding: 10px;
+    border: 1px dashed red;
+}
+
+.type-text,
+.type-tel {
+    width: 93%;
+    padding: 10px 18px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #00b3b3;
+    border-radius: 4px;
+}
+
+.box-languages {
+    border: none;
+}
+
+.label {
+    margin-right: 30px;
+}
+
+.type-checkbox {
+    margin: 12px 5px 5px 0;
+}
+
+.type-vol {
+    width: 35%;
+    height: 20px;
+    background: #d3d3d3;
+    outline: black;
+    opacity: 0.7;
+}
+
+.type-vol:hover {
+    opacity: 1;
+}
+
+.paragraph {
+    display: inline-flex;
+}
+
+.form-row.success input {
+    /* <div class="form-row success">..... */
+    border: 2px solid green;
+}
+
+.form-row.success .message::before {
+    color: blue;
+    content: "\2713 passed.";
+    font-weight: 900;
+    font-size: 1em;
+    visibility: visible;
+}
+
+.form-row.error input {
+    /* <div class="form-row error">..... */
+    border: 2px solid red;
+}
+
+.form-row .message {
+    visibility: hidden;
+    margin: 2px 0 12px 0;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.form-row.error .message {
+    visibility: visible;
+    color: red;
+}
+
+.type-submit {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 1px auto;
+}
+
+.type-submit:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    background: url(image/footer.jpg);
+    border: 2px solid red;
+}
+
+.footer p {
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+}
+
+.page {
+    background: #00b3b3;
+    width: 900px;
+    height: auto;
+    margin: 50px auto;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .header,
+    .footer,
+    .form-container,
+    .right,
+    .left,
+    .form-row,
+    img,
+    h4,
+    input[type=type-submit],
+    input[type=type-check-box],
+    input[type=type-text],
+    input[type=type-phone] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header .nav-bar ul li {
+        display: block;
+    }
+    .header .nav-bar ul li a:not(:first-child) {
+        display: none;
+    }
+}

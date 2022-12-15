@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Tuyển dụng nhân sự</title>
+</head>
+
+<body class="container">
+    <header class="grid header">
+        <div class="logo">
+            <i class="fa-solid fa-earth-asia"></i>
+            <h3>VnSoftware</h3>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><i class="fa-solid fa-house-chimney"></i>
+                    <a href="trangchu.html">Trang Chủ</a>
+                </li>
+                <li><a href="trangchu.html">Tin Tức</a></li>
+                <li><a href="trangchu.html">Giới Thiệu</a></li>
+                <li><a href="trangchu.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="grid left">
+        <img src="image/person.jpg" alt="">
+        <h4>Photo tuyển chọn nhân sự</h4>
+    </section>
+    <section class="grid right">
+        <div class="form-container">
+            <h3 class="title-3rd">Thông tin đơn tuyển dụng nhân sự</h3>
+            <form id="form" action="ketqua.html">
+                <div class="form-row">
+                    <label for="fullname">Họ Tên:</label>
+                    <input type="text" class="type-text" id="fullname" name="fullname" placeholder="Nhập họ tên" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" class="type-tel" id="phone" name="phone" placeholder="Dạng 10-11 số: 0000000000, 0000-000-000, 0000.000.0000">
+                </div>
+                <div class="form-row">
+                    <fieldset id="loveLanguages" class="box-languages">
+                        <legend>Chứng chỉ:</legend>
+                        <label class="label"><input class="type-checkbox" name="languages" type="checkbox" value="Enghlish"/>Tiếng Anh</label>
+                        <label class="label"><input class="type-checkbox" name="languages" type="checkbox" value="Japan"/>Nhật</label>
+                        <label class="label"><input class="type-checkbox" name="languages" type="checkbox" value="Koraen"/>Hàn Quốc</label>
+                        <label class="label"><input class="type-checkbox" name="languages" type="checkbox" value="French"/>Pháp</label>
+                        <label class="label"><input class="type-checkbox" name="languages" type="checkbox" value="Spanish"/>Tây Ban Nha</label>
+                    </fieldset>
+                </div>
+                <div class="form-row">
+                    <label for="vol">Mức lương khởi điểm:</label>
+                    <input type="range" name="vol" id="vol" class="type-vol" min="0" max="60" step="10">
+                    <p class="paragraph"><span id="money"></span><i> (triệu đồng)</i></p>
+                </div>
+                <div class="form-row">
+                    <input type="submit" class="type-submit" value="Gửi đơn">
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <footer class="grid footer">
+        <p>&copy; liemb2003790@student.ctu.edu.vn</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
